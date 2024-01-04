@@ -8,15 +8,32 @@ $(document).ready(function(){
     // 스타일 인덱스
     styleIdx();
 
-    var swiper = new Swiper(".mySwiper", {
-        effect: "fade",
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        fadeEffect: {
-            crossFade: true
-        },
-    });
+    $(window).scroll(function(){
+        $(this).scrollTop() > 0 ? $('header').addClass('active') : $('header').removeClass('active');
+    })
+
+    // 팝업
+    popup();
+    // 팝업
+    function popup(){
+        $('[data-popupOpen]').click(function(){
+            const attrName = $(this).attr('data-popupOpen');
+            $(`[data-popup="${attrName}"]`).addClass('active');
+        })
+        $('[data-popupClose]').click(function(){
+            const attrName = $(this).attr('data-popupClose');
+            $(`[data-popup="${attrName}"]`).removeClass('active');
+        })
+        $('[data-popup]').click(function(){
+            $(this).removeClass('active');
+        })
+        $('[data-popup]').click(function(e){
+            e.stopPropagation();
+        })
+    }
+
+    // 슬라이더
+    slider()
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0
@@ -41,4 +58,36 @@ function styleIdx(){
             $(this).css('--styleIdx', i)
         })
     })
+}
+
+
+// 팝업
+function popup(){
+    $('[data-popupOpen]').click(function(){
+        const attrName = $(this).attr('data-popupOpen');
+        $(`[data-popup="${attrName}"]`).addClass('active');
+    })
+    $('[data-popupClose]').click(function(){
+        const attrName = $(this).attr('data-popupClose');
+        $(`[data-popup="${attrName}"]`).removeClass('active');
+    })
+    $('[data-popup]').click(function(){
+        $(this).removeClass('active');
+    })
+    $('[data-popup]').click(function(e){
+        e.stopPropagation();
+    })
+}
+
+// 슬라이더
+function slider(){
+    var swiper = new Swiper(".mySwiper", {
+        effect: "fade",
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        fadeEffect: {
+            crossFade: true
+        },
+    });
 }

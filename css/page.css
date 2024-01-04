@@ -1,9 +1,9 @@
 /* 최상단 */
-.topArea{padding-block: 218px; height: 100vh; margin-bottom: 50px;}
+.topArea{padding-block: 218px; height: 100vh; margin-bottom: 50px; background: url(../images/top-BG.png) no-repeat center / cover;}
 .topArea b{font-size: 24px; line-height: 29px; margin-bottom: 34px; font-weight: 700; display: block;}
 .topArea h2{font-size: 60px; line-height: 72px; margin-bottom: 54px; font-weight: 700;}
 .topArea p{font-size: 20px; line-height: 30px; font-weight: 400; margin-bottom: 70px;}
-.topArea button{width: 268px; height: 62px;}
+.topArea :is(button, a){width: 268px; height: 62px; font-size: 20px; font-weight: 700;}
 
 
 /* 본인 확인 */
