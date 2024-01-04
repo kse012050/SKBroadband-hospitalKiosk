@@ -1,9 +1,15 @@
 br.pc{display: none;}
 
-.contentSize{--spacing: 20px;}
+body{--spacing: 20px;}
 
 
 /* 팝업 */
+[class*="popup"] > div{height: 100%;}
+[class*="popup"] > div button{right: 20px;}
+[class*="popup"] > div form{height: 100%; display: flex; flex-direction: column;}
+[class*="popup"] > div form fieldset{flex: 1; overflow: auto;}
+[class*="popup"] > div form fieldset ul li:has(input){width: 100%;}
+[class*="popup"] > div form fieldset ul li:not(:last-child){margin-bottom: 30px;}
 
 
 /* 해더 */

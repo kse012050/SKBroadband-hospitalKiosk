@@ -1,15 +1,18 @@
 br.mobile{display: none;}
 
-.contentSize{--spacing: 40px;}
+body{--spacing: 40px;}
 
 
 /* 팝업 */
+[class*="popup"] > div form fieldset ul{display: flex; flex-wrap: wrap; row-gap: 30px; justify-content: space-between;}
+[class*="popup"] > div form fieldset ul li:has(input){width: 47.87%;}
 
 
 /* 해더 */
 header{padding-block: 33px;}
 header h1{max-width: 158px;}
 header button{font-size: 17px; font-weight: 700; width: 126px; height: 50px;}
+[class*="popup"] > div button{right: 30px;}
 
 
 /* 푸터 */

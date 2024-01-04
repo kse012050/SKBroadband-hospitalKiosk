@@ -10,16 +10,12 @@
 
 /* 팝업 */
 body:has([class*="popup"].active){overflow: hidden;}
-[class*="popup"]{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center; z-index: 101;}
+[class*="popup"]{position: fixed; left: 0; top: 0; width: 100%; height: 100%; padding: var(--spacing); background-color: rgba(0, 0, 0, 0.5); display: none; justify-content: center; align-items: center; box-sizing: border-box; z-index: 101;}
 [class*="popup"].active{display: flex;}
-[class*="popup"] > div{max-width: 644px; background-color: white; border-radius: 20px; box-sizing: border-box; overflow: hidden; position: relative;}
-[class*="popup"] > div form{}
-[class*="popup"] > div form fieldset{padding: 40px 40px 0 40px;}
+[class*="popup"] > div{width: 100%; max-width: 644px; background-color: white; border-radius: 20px; box-sizing: border-box; overflow: hidden; position: relative;}
+[class*="popup"] > div form fieldset{padding: 40px  var(--spacing) 40px var(--spacing);}
 [class*="popup"] > div form fieldset strong{font-size: 32px; line-height: 38px; margin-bottom: 16px; font-weight: 700; text-align: center; display: block;}
 [class*="popup"] > div form fieldset p{font-size: 15px; line-height: 18px; margin-bottom: 35px; font-weight: 400; text-align: center;}
-[class*="popup"] > div form fieldset ul{display: flex; flex-wrap: wrap; row-gap: 30px; justify-content: space-between;}
-[class*="popup"] > div form fieldset ul li{}
-[class*="popup"] > div form fieldset ul li:has(input){width: 47.87%;}
 [class*="popup"] > div form fieldset ul li:has(textarea){width: 100%;}
 [class*="popup"] > div form fieldset ul li > label:first-child{font-size: 13px; line-height: 16px; font-weight: 700; margin-bottom: 10px; display: block;}
 [class*="popup"] > div form fieldset ul li div{font-size: 13px; font-weight: 400;}
@@ -30,8 +26,8 @@ body:has([class*="popup"].active){overflow: hidden;}
 [class*="popup"] > div form fieldset ul li div textarea{height: 156px; padding-block: 20px;}
 [class*="popup"] > div form fieldset input[type="checkbox"] + label{font-size: 14px; margin-top: 30px; font-weight: 400; display: inline-flex; align-items: center;}
 [class*="popup"] > div form fieldset input[type="checkbox"] + label::before{content: ''; width: 18px; margin-right: 8px; aspect-ratio: 1; --styleIdx: 0; background: url(../images/icon-checkbox.png) no-repeat center top calc(100% * var(--styleIdx)) / 100%;}
-[class*="popup"] > div form input[type="submit"]{width: 100%; height: 64px; font-size: 16px; margin-top: 40px; border: none; font-weight: 800; color: white; background-color: #EF413D;}
-[class*="popup"] > div button{position: absolute; right: 30px; top: 30px; width: 30px; aspect-ratio: 1; background: url(../images/icon-close.png) no-repeat center / cover; text-indent: -9999px;}
+[class*="popup"] > div form input[type="submit"]{width: 100%; height: 64px; font-size: 16px; border: none; font-weight: 800; color: white; background-color: #EF413D;}
+[class*="popup"] > div button{top: 30px; width: 30px; position: absolute; aspect-ratio: 1; background: url(../images/icon-close.png) no-repeat center / cover; text-indent: -9999px;}
 
 
 /* 해더 */
