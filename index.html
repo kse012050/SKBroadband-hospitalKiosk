@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>병원키오스크 - SK브로드밴드</title> 
+    <title>병원키오스크 - SK브로드밴드</title>
+    <!-- jQUery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
     <script src="js/style.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
@@ -60,8 +66,55 @@
         </div>
     </div>
 
-    <div class="slider">
-
+    <div class="sliderArea contentSize">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <!-- <mark>시스템 특장점</mark> -->
+                        <strong>
+                            긴급상황에도 문제 없는<br>
+                            365일 전국 유지보수 체계 구축
+                        </strong>
+                        <p>
+                            전국 233개 지점 4600여명의 정규직 인력으로<br>
+                            최상의 유지보수 서비스 제공
+                        </p>
+                    </div>
+                    <img src="images/slider01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <!-- <mark>시스템 특장점</mark> -->
+                        <strong>
+                            심미적 디자인의<br>
+                            2 Type 키오스크
+                        </strong>
+                        <p>
+                            인테리어를 해치지 않는 화이트톤의 디자인으로<br>
+                            병원 환경에 맞춰 데스크형/스탠드형으로 선택 가능
+                        </p>
+                    </div>
+                    <img src="images/slider02.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <!-- <mark>시스템 특장점</mark> -->
+                        <strong>
+                            안전한<br>
+                            개인정보 보호 시스템
+                        </strong>
+                        <p>
+                            자사 보안 시스템 및 VPN활용으로<br>
+                            EMR 정보 보호 및 사이버 공격 피해를 최소화
+                        </p>
+                    </div>
+                    <img src="images/slider03.png" alt="">
+                </div>
+            </div>
+            <mark>시스템 특장점</mark>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
     <footer class="contentSize">
