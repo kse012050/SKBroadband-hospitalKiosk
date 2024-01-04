@@ -6,6 +6,17 @@
 .topArea button{width: 215px; height: 50px; font-size: 16px;}
 
 /* 본인 확인 */
+.checkArea{margin-bottom: 140px;}
+.checkArea > strong{font-size: 42px; line-height: 50px; margin-bottom: 85px;}
+.checkArea > p{font-size: 21px; line-height: 32px;}
+.checkArea > p:nth-of-type(1){margin-bottom: 202px;}
+.checkArea > p:nth-of-type(1)::after{top: calc(100% - 20px); width: 486px;}
+.checkArea .screenArea{margin-bottom: 67px;}
+.checkArea .screenArea ol::before{font-size: 16px; line-height: 44px; margin-bottom: 45px;}
+.checkArea .downloadArea{padding: 37px 60px;}
+.checkArea .downloadArea strong{font-size: 24px;}
+.checkArea .downloadArea p{font-size: 21px;}
+.checkArea .downloadArea a{margin-left: 20px; width: 164px; line-height: 60px;}
 
 
 /* 슬라이더 */

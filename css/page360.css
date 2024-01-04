@@ -6,6 +6,21 @@
 .topArea button{width: 153px; height: 40px; font-size: 13px;}
 
 /* 본인 확인 */
+.checkArea{margin-bottom: 100px;}
+.checkArea > strong{font-size: 24px; line-height: 29px; margin-bottom: 50px;} 
+.checkArea .imgArea{aspect-ratio: 320 / 779; margin-bottom: 90px; background-image: url(../images/check-img-m.png);}
+.checkArea > p{font-size: 15px; line-height: 20px;}
+.checkArea > p:nth-of-type(1){margin-bottom: 227px;}
+.checkArea > p:nth-of-type(1)::after{top: calc(100% - 36px); width: 100%;}
+.checkArea .screenArea{margin-bottom: 100px;}
+.checkArea .screenArea ol::before{font-size: 15px; line-height: 42px; margin-bottom: 30px;}
+.checkArea .screenArea ol:not(:last-of-type){margin-bottom: 50px;}
+.checkArea .screenArea ol:nth-child(2)::after{width: 65.625%; margin-inline: auto;}
+.checkArea .downloadArea{padding: 30px 20px;}
+.checkArea .downloadArea strong{font-size: 17px; line-height: 20px; margin-bottom: 20px; display: block;}
+.checkArea .downloadArea p{font-size: 15px; line-height: 18px; margin-bottom: 10px;}
+.checkArea .downloadArea a{font-size: 15px; width: 112px; line-height: 42px;} 
+.checkArea .downloadArea{border-radius: 12px;}
 
 
 /* 슬라이더 */
