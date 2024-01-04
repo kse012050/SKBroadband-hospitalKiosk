@@ -80,6 +80,8 @@ input[type="checkbox"],
 input[type="radio"],
 input[type="file"]{display: none;}
 
+img{width: 100%;}
+
 a{text-decoration: none; color: inherit; display: inline-block;}
 
 button{background-color: transparent; border: none; cursor: pointer; padding: 0; font: inherit; color: inherit;}

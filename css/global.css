@@ -1,8 +1,5 @@
-img{width: 100%;}
-
-
 /* 컨텐츠 */
-.contentSize{padding-inline: calc((var(--fullWidth) - 1200px) / 2); box-sizing: border-box;}
+.contentSize{padding-inline: max(calc((var(--fullWidth) - 1200px) / 2), var(--spacing)); box-sizing: border-box;}
 
 
 /* 버튼 */
@@ -28,6 +25,7 @@ body:has([class*="popup"].active){overflow: hidden;}
 [class*="popup"] > div form fieldset ul li div{font-size: 13px; font-weight: 400;}
 [class*="popup"] > div form fieldset ul li div :is(input, textarea){width: 100%; padding-inline: 20px; border: 1px solid #E2E2E2; border-radius: 6px; box-sizing: border-box;}
 [class*="popup"] > div form fieldset ul li div :is(input, textarea)::placeholder{color: #999;}
+[class*="popup"] > div form fieldset ul li div :is(input, textarea):focus{outline: 1px solid #EF413D;}
 [class*="popup"] > div form fieldset ul li div input{height: 50px;}
 [class*="popup"] > div form fieldset ul li div textarea{height: 156px; padding-block: 20px;}
 [class*="popup"] > div form fieldset input[type="checkbox"] + label{font-size: 14px; margin-top: 30px; font-weight: 400; display: inline-flex; align-items: center;}
@@ -37,23 +35,18 @@ body:has([class*="popup"].active){overflow: hidden;}
 
 
 /* 해더 */
-header{position: fixed; left: 0; top: 0; width: 100%; padding-block: 33px; display: flex; justify-content: space-between; align-items: center; z-index: 100;}
+header{position: fixed; left: 0; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; z-index: 100;}
 header.active{background-color: white;}
-header h1{max-width: 158px;}
-header button{font-size: 17px; font-weight: 700; width: 126px; height: 50px;}
 
 
 /* 푸터 */
-footer{padding-block: 40px; border-top: 1px solid rgba(0, 0, 0, 0.10); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;}
-footer h2{width: 133px; margin-bottom: 19px;}
-footer ul{display: flex; font-size: 20px; line-height: 24px;}
+footer{border-top: 1px solid rgba(0, 0, 0, 0.10);}
 footer ul li{display: flex; align-items: center;}
-footer ul li:not(:last-child)::after{content: ''; width: 2px; height: 18px; background-color: #666; margin-inline: 15px;}
 footer ul li p{font-weight: 400; color: #666; margin-right: 0.4em;}
 footer ul li a{font-weight: 700;}
-footer address{display: flex; flex-wrap: wrap; font-size: 15px; line-height: 22px; color: #666;}
+footer address{display: flex; flex-wrap: wrap; color: #666; order: 1;}
 footer address dl{display: flex; align-items: center;}
-footer address dl:not(:last-of-type)::after{content: ''; width: 1px; height: 13px; background-color: #666; margin-inline: 7px;}
+footer address dl:not(:last-of-type)::after{width: 1px; background-color: #666; margin-inline: 7px;}
 footer address dl dt{font-weight: 700; margin-right: 0.4em;}
 footer address dl dd{font-weight: 400;}
 footer address p{width: 100%;}

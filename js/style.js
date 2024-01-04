@@ -27,7 +27,7 @@ $(document).ready(function(){
         $('[data-popup]').click(function(){
             $(this).removeClass('active');
         })
-        $('[data-popup]').click(function(e){
+        $('[data-popup] > div').click(function(e){
             e.stopPropagation();
         })
     }

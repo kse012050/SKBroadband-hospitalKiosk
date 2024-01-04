@@ -1,0 +1,20 @@
+.contentSize{--spacing: 20px;}
+
+
+/* 팝업 */
+
+
+/* 해더 */
+header{padding-block: 20px;}
+header h1{max-width: 100px;}
+header button{display: none;}
+
+
+/* 푸터 */
+footer{padding-block: 25px;}
+footer h2{width: 118px; margin-bottom: 11px;}
+footer ul{font-size: 15px; line-height: 24px;}
+footer address{margin-bottom: 40px;}
+footer address dl:first-of-type:after{content: '';}
+footer address dl:last-of-type{width: 100%;}
+
