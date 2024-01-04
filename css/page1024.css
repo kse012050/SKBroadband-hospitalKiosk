@@ -20,3 +20,17 @@
 
 
 /* 슬라이더 */
+.sliderArea{margin-bottom: 196px;}
+.sliderArea .swiper mark{font-size: 17px; line-height: 20px;}
+.sliderArea .swiper .swiper-slide div strong{font-size: 42px; line-height: 50px; margin-bottom: 37px;}
+.sliderArea .swiper .swiper-slide div p{font-size: 21px; line-height: 32.5px;}
+.sliderArea .swiper .swiper-slide img{max-width: clamp(506px, 49.12%, 467px);}
+@media screen and (1000px <= width) {
+    .sliderArea .swiper mark{top: 163px;}
+    .sliderArea .swiper .swiper-slide div{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+    .sliderArea .swiper .swiper-pagination{bottom: 163px;}
+}
+@media screen and (width < 1000px) {
+    .sliderArea .swiper mark{position: static; margin-bottom: 48px; display: block;}
+    .sliderArea .swiper .swiper-pagination{bottom: 600px;}
+}

@@ -24,3 +24,9 @@
 
 
 /* 슬라이더 */
+.sliderArea{margin-bottom: 150px;} 
+.sliderArea .swiper mark{font-size: 15px; line-height: 18px; margin-bottom: 30px; display: block;}
+.sliderArea .swiper .swiper-slide div strong{font-size: 24px; line-height: 29px; margin-bottom: 20px;}
+.sliderArea .swiper .swiper-slide div p{font-size: 15px; line-height: 22px; margin-bottom: 89px;}
+.sliderArea .swiper .swiper-slide img{max-width: 500px;}
+.sliderArea .swiper .swiper-pagination{top: 192px;}

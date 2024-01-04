@@ -10,3 +10,4 @@
 .checkArea .downloadArea{border-radius: 16px; display: flex; align-items: center;}
 
 /* 슬라이더 */
+.sliderArea .swiper mark{position: absolute; left: 0;}
