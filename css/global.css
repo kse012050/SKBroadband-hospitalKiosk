@@ -15,3 +15,19 @@ img{width: 100%;}
 header{position: fixed; left: 0; top: 0; width: 100%; padding-block: 33px; background-color: white; display: flex; justify-content: space-between; align-items: center; z-index: 100;}
 header h1{max-width: 158px;}
 header button{font-size: 17px; font-weight: 700; width: 126px; height: 50px;}
+
+
+/* 푸터 */
+footer{padding-block: 40px; border-top: 1px solid rgba(0, 0, 0, 0.10); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;}
+footer h2{width: 133px; margin-bottom: 19px;}
+footer ul{display: flex; font-size: 20px; line-height: 24px;}
+footer ul li{display: flex; align-items: center;}
+footer ul li:not(:last-child)::after{content: ''; width: 2px; height: 18px; background-color: #666; margin-inline: 15px;}
+footer ul li p{font-weight: 400; color: #666; margin-right: 0.4em;}
+footer ul li a{font-weight: 700;}
+footer address{display: flex; flex-wrap: wrap; font-size: 15px; line-height: 22px; color: #666;}
+footer address dl{display: flex; align-items: center;}
+footer address dl:not(:last-of-type)::after{content: ''; width: 1px; height: 13px; background-color: #666; margin-inline: 7px;}
+footer address dl dt{font-weight: 700; margin-right: 0.4em;}
+footer address dl dd{font-weight: 400;}
+footer address p{width: 100%;}
