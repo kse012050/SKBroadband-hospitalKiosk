@@ -1,5 +1,9 @@
 /* 최상단 */
-
+.topArea{margin-bottom: 50px;}
+.topArea b{font-size: 24px; line-height: 29px; margin-bottom: 34px;}
+.topArea h2{font-size: 60px; line-height: 72px; margin-bottom: 54px;}
+.topArea p{font-size: 20px; line-height: 30px; margin-bottom: 70px;}
+.topArea button{width: 268px; height: 62px; font-size: 20px;}
 
 /* 본인 확인 */
 
