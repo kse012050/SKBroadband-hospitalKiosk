@@ -1,10 +1,17 @@
 img{width: 100%;}
 
+
 /* 컨텐츠 */
 .contentSize{padding-inline: calc((var(--fullWidth) - 1200px) / 2); box-sizing: border-box;}
 
 
+/* 버튼 */
+[class*="btn"]{border-radius: 100px;}
+.btn-point{color: white; background-color: #EF413D;}
+.btn-black{color: white; background-color: black;}
+
+
 /* 해더 */
-header{position: fixed; left: 0; top: 0; width: 100%; padding-block: 33px; display: flex; justify-content: space-between; align-items: center;}
+header{position: fixed; left: 0; top: 0; width: 100%; padding-block: 33px; background-color: white; display: flex; justify-content: space-between; align-items: center; z-index: 100;}
 header h1{max-width: 158px;}
-header button{font-size: 17px; font-weight: 700; color: white; width: 126px; height: 50px; background-color: #EF413D; border-radius: 100px;}
+header button{font-size: 17px; font-weight: 700; width: 126px; height: 50px;}

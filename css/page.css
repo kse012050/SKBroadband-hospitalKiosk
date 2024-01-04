@@ -1,0 +1,28 @@
+/* 최상단 */
+.topArea{padding-block: 218px; height: 100vh; margin-bottom: 50px;}
+.topArea b{font-size: 24px; line-height: 29px; margin-bottom: 34px; font-weight: 700; display: block;}
+.topArea h2{font-size: 60px; line-height: 72px; margin-bottom: 54px; font-weight: 700;}
+.topArea p{font-size: 20px; line-height: 30px; font-weight: 400; margin-bottom: 70px;}
+.topArea button{width: 268px; height: 62px;}
+
+
+/* 본인 확인 */
+.checkArea{text-align: center;}
+.checkArea > strong{font-size: 48px; line-height: 57px; margin-bottom: 70px; font-weight: 700; display: block;}
+.checkArea img{margin-bottom: 90px;}
+.checkArea > p{font-size: 24px; line-height: 36px; font-weight: 400;}
+.checkArea > p b{font-weight: 700;}
+.checkArea > p:nth-of-type(1){margin-bottom: 228px;}
+.checkArea .screenArea{display: flex; justify-content: space-between; margin-bottom: 50px;}
+.checkArea .screenArea ul{display: flex; flex-wrap: wrap;}
+.checkArea .screenArea ul:nth-child(1){width: 57.33%;}
+.checkArea .screenArea ul:nth-child(2){width: 37.66%;}
+.checkArea .screenArea ul::before{content: attr(title); width: 100%; font-size: 18px; line-height: 48px; font-weight: 700; border-radius: 100px;}
+.checkArea .screenArea ul:nth-child(1)::before{color: #EF413D; background-color: rgba(239, 65, 61, 0.10);}
+.checkArea .screenArea ul:nth-child(2)::before{color: #FF8300; background-color: rgba(255, 131, 0, 0.10);}
+.checkArea .screenArea ul li{}
+.checkArea > p:nth-of-type(2){margin-bottom: 120px;}
+.checkArea .downloadArea{padding: 39px 70px; box-sizing: border-box; background-color: #F7F7F9; border-radius: 16px; display: flex; align-items: center;}
+.checkArea .downloadArea strong{font-size: 28px; font-weight: 700;}
+.checkArea .downloadArea p{margin-left: auto; font-size: 25px; font-weight: 500;}
+.checkArea .downloadArea a{margin-left: 16px; font-size: 24px; font-weight: 700; width: 174px; line-height: 64px; text-align: center;}
