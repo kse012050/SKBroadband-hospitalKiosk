@@ -25,11 +25,11 @@
 .checkArea .downloadArea{box-sizing: border-box; background-color: #F7F7F9;}
 .checkArea .downloadArea strong{font-weight: 700;}
 .checkArea .downloadArea p{font-weight: 500;}
-.checkArea .downloadArea a{font-size: 24px; font-weight: 700; text-align: center;}
+.checkArea .downloadArea button{font-size: 24px; font-weight: 700; text-align: center;}
 
 
 /* 슬라이더 */
-.sliderArea .swiper mark{font-weight: 700; color: #EF413D;}
+.sliderArea .swiper mark{font-weight: 700; color: #EF413D; display: block;}
 .sliderArea .swiper .swiper-slide div strong{font-weight: 700; display: block;}
 .sliderArea .swiper .swiper-slide div p{font-weight: 400;}
 .sliderArea .swiper .swiper-pagination{text-align: left; pointer-events: none;}
