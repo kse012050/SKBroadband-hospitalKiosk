@@ -25,9 +25,10 @@ body:has([class*="popup"].active){overflow: hidden;}
 [class*="popup"] > div form fieldset ul li div input{height: 50px;}
 [class*="popup"] > div form fieldset ul li div textarea{height: 156px; padding-block: 20px;}
 [class*="popup"] > div form fieldset ul li:has(:required) > label::after{content: '*'; color: #EF413D;}
-[class*="popup"] > div form fieldset input[type="checkbox"] + label{font-size: 14px; margin-top: 30px; font-weight: 400; display: inline-flex; align-items: center;}
+[class*="popup"] > div form fieldset input[type="checkbox"] + label{font-size: 14px; margin-top: 30px; font-weight: 400; display: inline-flex; align-items: center; cursor: pointer;}
 [class*="popup"] > div form fieldset input[type="checkbox"] + label::before{content: ''; width: 18px; margin-right: 8px; aspect-ratio: 1; --styleIdx: 0; background: url(../images/icon-checkbox.png) no-repeat center top calc(100% * var(--styleIdx)) / 100%;}
 [class*="popup"] > div form fieldset input[type="checkbox"]:required + label::after{content: '*'; color: #EF413D;}
+[class*="popup"] > div form fieldset input[type="checkbox"]:checked + label::before{--styleIdx: 1;}
 [class*="popup"] > div form input[type="submit"]{width: 100%; height: 64px; font-size: 16px; border: none; font-weight: 800; color: white; background-color: #EF413D;}
 [class*="popup"] > div button{top: 30px; width: 30px; position: absolute; aspect-ratio: 1; background: url(../images/icon-close.png) no-repeat center / cover; text-indent: -9999px;}
 
