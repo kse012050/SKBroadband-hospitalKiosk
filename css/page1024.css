@@ -27,7 +27,7 @@
 .sliderArea .swiper .swiper-slide img{max-width: clamp(506px, 49.12%, 467px);}
 @media screen and (1000px <= width) {
     .sliderArea .swiper mark{margin-bottom: 46px;}
-    .sliderArea .swiper .swiper-slide div{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+    .sliderArea .swiper .swiper-slide div{position: absolute; left: var(--spacing); top: 50%; transform: translateY(-50%);}
     .sliderArea .swiper .swiper-pagination{bottom: 163px;}
 }
 @media screen and (width < 1000px) {

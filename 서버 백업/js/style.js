@@ -82,15 +82,9 @@ function popup(){
 // 슬라이더
 function slider(){
     var swiper = new Swiper(".mySwiper", {
-        // effect: "fade",
+        effect: "fade",
         pagination: {
             el: ".swiper-pagination",
-        },
-        
-        centeredSlides: true,
-        autoplay: {
-            delay: 4000,
-            // disableOnInteraction: true
         },
         fadeEffect: {
             crossFade: true
