@@ -34,6 +34,11 @@ $(document).ready(function(){
 
     // 슬라이더
     slider()
+
+    // 메뉴
+    $('header [data-menu]').click(function(){
+        $('header nav').toggleClass('active')
+    })
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0

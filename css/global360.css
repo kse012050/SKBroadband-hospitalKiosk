@@ -16,6 +16,15 @@ body{--spacing: 20px;}
 header{padding-block: 20px;}
 header h1{max-width: 100px;}
 header [class*="btn"]{position: fixed; left: 20px; bottom: 20px; width: calc(100% - 40px); height: 50px; font-size: 16px; font-weight: 700; border-radius: 8px;}
+header button:not([class]){width: 38px; aspect-ratio: 1; text-indent: -9999px; background: url(../images/icon-menu.png) no-repeat left top calc(var(--styleIdx) * 100%) / 100%;}
+header > button:not([class]):first-of-type{margin-left: auto; --styleIdx: 0;}
+header nav{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 100;}
+body:has(nav.active){overflow: hidden;}
+header nav.active{display: block;}
+header nav ul{width: 220px; margin-left: auto; height: 100%; padding: 80px 30px; background-color: white;}
+header nav ul li{font-size: 20px;}
+header nav ul li:not(:last-child){margin-bottom: 30px;}
+header nav button{position: absolute; right: 10px; top: 10px; --styleIdx: 1;}
 
 
 /* 푸터 */

@@ -9,9 +9,12 @@ body{--spacing: 40px;}
 
 
 /* 해더 */
-header{padding-block: 33px;}
+header{padding-block: 25px;}
 header h1{max-width: 158px;}
 header button{font-size: 17px; font-weight: 700; width: 126px; height: 50px;}
+header button:not([class]){display: none;}
+header nav{margin-left: auto; margin-right: 50px;}
+header nav ul{display: flex; gap: 80px; font-size: 18px;}
 [class*="popup"] > div button{right: 30px;}
 
 
