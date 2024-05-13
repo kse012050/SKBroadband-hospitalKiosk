@@ -30,3 +30,33 @@
 .sliderArea .swiper .swiper-slide div p{font-size: 15px; line-height: 22px; margin-bottom: 89px;}
 .sliderArea .swiper .swiper-slide img{max-width: 500px;}
 .sliderArea .swiper .swiper-pagination{top: 192px;}
+
+
+/* 시스템 페이지 */
+.systemPage section h2{font-size: 28px; line-height: 33px;}
+.systemPage section h2:has(+ p){margin-bottom: 20px;}
+.systemPage section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 50px;}
+.systemPage section > p{font-size: 15px; line-height: 20px;}
+.systemPage section small{font-size: 13px; line-height: 18px; padding-top: 20px; margin-top: 40px;}
+
+.systemPage .dutyArea{padding-top: 138px;}
+.systemPage section{padding-bottom: 80px;}
+.systemPage section:not(.dutyArea){padding-top: 80px;}
+.systemPage .dutyArea ol li{padding-left: 40px; position: relative; text-align: left;}
+.systemPage .dutyArea ol li:not(:last-child){padding-bottom: 40px;}
+.systemPage .dutyArea ol li::before{margin-bottom: 20px;}
+.systemPage .dutyArea ol li mark::before{left: 0; top: 0;}
+.systemPage .dutyArea ol li:last-child mark::before{width: 10px; box-shadow: 0 0 0 5px rgba(239, 65, 61, 0.3);}
+.systemPage .dutyArea ol li:not(:last-child) mark::after{left: 4px; top: 0; height: 100%; border-left: 2px dashed #EF413D;}
+.systemPage .dutyArea ol li strong{margin-bottom: 10px;}
+
+.systemPage .processArea::after{aspect-ratio: 320 / 760; background: url('../images/system-process-m.png') no-repeat center / cover;}
+.systemPage .proofArea ul li p{font-size: 15px; line-height: 20px;}
+.systemPage .proofArea ul li p::after{margin-top: 20px;}
+.systemPage .proofArea ul li:not(:last-child){margin-bottom: 40px;}
+.systemPage .proofArea ul li mark{font-size: 15px; line-height: 18px; margin-top: 20px;}
+.systemPage .proofArea small + p{margin-bottom: 40px; margin-top: 60px;}
+.systemPage .proofArea ol li{font-size: 15px; line-height: 20px;}
+.systemPage .proofArea ol li:not(:last-child){margin-bottom: 138px;}
+.systemPage .proofArea ol li::before{margin-bottom: 12px;}
+.systemPage .proofArea ol::after{width: 108px; rotate: 90deg;}

@@ -10,3 +10,9 @@
 .sliderArea .swiper .swiper-pagination .swiper-pagination-bullet{width: 9px; height: 9px; border-radius: 5px;}
 .sliderArea .swiper .swiper-pagination .swiper-pagination-bullet-active{width: 18px;}
 .sliderArea .swiper .swiper-pagination span:not(:last-child){margin-right: 7px;}
+
+
+/* 시스템 페이지 */
+.systemPage .dutyArea ol li :is(mark, strong){font-size: 18px;}
+.systemPage .dutyArea ol li mark{margin-bottom: 16px;}
+.systemPage .dutyArea ol li p{font-size: 16px;}

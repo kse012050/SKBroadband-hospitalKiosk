@@ -34,3 +34,17 @@
     .sliderArea .swiper mark{margin-bottom: 48px;}
     .sliderArea .swiper .swiper-pagination{bottom: 600px;}
 }
+
+
+/* 시스템 페이지 */
+.systemPage section h2{font-size: 42px; line-height: 50px;}
+.systemPage section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 60px;}
+.systemPage section > p{font-size: 21px; line-height: 32px;}
+
+.systemPage .dutyArea ol{--gap: 22px;}
+
+.systemPage .proofArea ul{gap: 60px;}
+.systemPage .proofArea ul li p{font-size: 21px; line-height: 32px;}
+.systemPage .proofArea ul li p::after{margin-top: 30px;}
+.systemPage .proofArea ul li mark{font-size: 16px; line-height: 19px; margin-top: 25px;}
+.systemPage .proofArea small + p{max-width: 600px; margin-bottom: 60px;}

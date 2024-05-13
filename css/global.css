@@ -1,3 +1,7 @@
+:root{
+    --color-point: #EF413D;
+}
+
 /* 컨텐츠 */
 .contentSize{padding-inline: max(calc((var(--fullWidth) - 1200px) / 2), var(--spacing)); box-sizing: border-box;}
 

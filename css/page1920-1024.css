@@ -10,3 +10,33 @@
 .checkArea .downloadArea{border-radius: 16px; display: flex; align-items: center;}
 
 /* 슬라이더 */
+
+
+/* 시스템 페이지 */
+.systemPage section h2:has(+ p){margin-bottom: 30px;}
+
+.systemPage .dutyArea{padding-top: 260px;}
+.systemPage section{padding-bottom: 120px;}
+.systemPage section:not(.dutyArea){padding-top: 120px;}
+.systemPage section small{font-size: 18px; line-height: 30px; padding-top: 30px; margin-top: 50px;}
+
+
+.systemPage .dutyArea ol{display: flex; gap: var(--gap); justify-content: space-between; position: relative;}
+.systemPage .dutyArea ol li{position: relative; width: 100%;}
+.systemPage .dutyArea ol li::before{content: ''; margin-bottom: 80px;}
+.systemPage .dutyArea ol li mark{position: relative;}
+.systemPage .dutyArea ol li mark::before{left: 50%; top: -38px; transform: translate(-50%, -50%);}
+.systemPage .dutyArea ol li:last-child mark::before{width: 16px; box-shadow: 0 0 0 9px rgba(239, 65, 61, 0.3);}
+.systemPage .dutyArea ol li:not(:last-child) mark::after{left: 50%; top: -38px; width: calc(100% + var(--gap)); border-top: 2px dashed #EF413D;}
+.systemPage .dutyArea ol li strong{margin-bottom: 12px;}
+.systemPage .dutyArea small{max-width: 900px;}
+
+.systemPage .processArea::after{aspect-ratio: 1200 / 420; background: url('../images/system-process.png') no-repeat center / cover;}
+
+.systemPage .proofArea ul{display: flex;}
+.systemPage .proofArea ul li{flex: 1;}
+.systemPage .proofArea small + p{margin-top: 120px; margin-inline: auto;}
+.systemPage .proofArea ol{display: flex; justify-content: center; gap: 374px;}
+.systemPage .proofArea ol::after{width: 214px;}
+.systemPage .proofArea ol li{font-size: 20px; line-height: 24px;}
+.systemPage .proofArea ol li::before{margin-bottom: 30px;}

@@ -35,3 +35,31 @@
 .sliderArea .swiper .swiper-pagination{text-align: left; pointer-events: none;}
 .sliderArea .swiper .swiper-pagination .swiper-pagination-bullet{background-color: #D9D9D9; margin: 0; pointer-events: all; opacity: 1;}
 .sliderArea .swiper .swiper-pagination .swiper-pagination-bullet-active{background-color: #EE403D;}
+
+
+/* 시스템 페이지 */
+.systemPage{text-align: center;}
+.systemPage section h2{font-weight: 500;}
+.systemPage section > p{font-weight: 400;}
+.systemPage section small{color: #666; display: block; margin-inline: auto; border-top: 1px solid #dedede;}
+
+.systemPage .dutyArea ol li::before{content: ''; display: block; aspect-ratio: 380 / 370; background: url('../images/img-system.png') no-repeat left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)) / 100%;}
+.systemPage .dutyArea ol li :is(mark, strong){display: block; font-weight: 600;}
+.systemPage .dutyArea ol li mark::before{content: ''; position: absolute; aspect-ratio: 1; background-color: var(--color-point); border-radius: 100%;}
+.systemPage .dutyArea ol li mark{color: var(--color-point);}
+.systemPage .dutyArea ol li:not(:last-child) mark::before{width: 12px;}
+.systemPage .dutyArea ol li:not(:last-child) mark::after{content: ''; position: absolute;}
+.systemPage .dutyArea ol li strong{color: #222;}
+.systemPage .dutyArea ol li p{font-weight: 400; color: #666;}
+
+.systemPage .processArea{--backgroundColor: #F8F8F8; background-color: var(--backgroundColor); box-shadow: 0 0 0 100vmax var(--backgroundColor); clip-path: inset(0 -100vmax);}
+.systemPage .processArea::after{content: ''; display: block;}
+
+.systemPage .proofArea ul li p::after{content: ''; display: block; aspect-ratio: 560 / 284; background: url(../images/system-ai.png) no-repeat left top calc((100% / (var(--idxTotal) - 1) * var(--styleIdx))) / 100%;}
+.systemPage .proofArea ul li mark{display: block; font-weight: 600; padding-block: 12px; border-radius: 100px;}
+.systemPage .proofArea ul li:nth-child(1) mark{color: var(--color-point); background-color: rgba(239, 65, 61, 0.1);}
+.systemPage .proofArea ul li:nth-child(2) mark{color: #FF8300; background-color: rgba(255, 131, 0, 0.1);}
+.systemPage .proofArea ol{position: relative;}
+.systemPage .proofArea ol::after{content: ''; aspect-ratio: 214 / 178; position: absolute; left: 50%; top: 50%; /* transform: translate(-50%, -50%); */ translate: -50% -50%; background: url(../images/system-arrow.png) no-repeat center / cover;}
+.systemPage .proofArea ol li{font-weight: 600;}
+.systemPage .proofArea ol li::before{content: ''; display: block; width: 130px; aspect-ratio: 130 / 100; background: url(../images/icon-system.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%; margin-inline: auto;}
