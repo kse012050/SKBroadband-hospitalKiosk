@@ -1,0 +1,28 @@
+br.pc{display: none;}
+
+body{--spacing: 20px;}
+
+
+/* 팝업 */
+[class*="popup"] > div{height: 100%;}
+[class*="popup"] > div button{right: 20px;}
+[class*="popup"] > div form{height: 100%; display: flex; flex-direction: column;}
+[class*="popup"] > div form fieldset{flex: 1; overflow: auto;}
+[class*="popup"] > div form fieldset ul li:has(input){width: 100%;}
+[class*="popup"] > div form fieldset ul li:not(:last-child){margin-bottom: 30px;}
+
+
+/* 해더 */
+header{padding-block: 20px;}
+header h1{max-width: 100px;}
+header [class*="btn"]{position: fixed; left: 20px; bottom: 20px; width: calc(100% - 40px); height: 50px; font-size: 16px; font-weight: 700; border-radius: 8px;}
+
+
+/* 푸터 */
+footer{padding-block: 25px 70px;}
+footer h2{width: 118px; margin-bottom: 11px;}
+footer ul{font-size: 15px; line-height: 24px;}
+footer address{margin-bottom: 40px;}
+footer address dl:first-of-type:after{content: '';}
+footer address dl:last-of-type{width: 100%;}
+

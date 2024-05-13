@@ -1,0 +1,17 @@
+/* font */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+@import url('reset.css');
+@import url('global.css');
+@import url('global1920-1024.css') screen and (820px < width);
+@import url('global1024-360.css') screen and (width <= 1240px);
+@import url('global1920.css') screen and (1240px < width);
+@import url('global1024.css') screen and (820px < width) and (width <= 1240px);
+@import url('global360.css') screen and (width <= 820px);
+@import url('page.css');
+@import url('page1920-1024.css') screen and (820px < width);
+@import url('page1024-360.css') screen and (width <= 1240px);
+@import url('page1920.css') screen and (1240px < width);
+@import url('page1024.css') screen and (820px < width) and (width <= 1240px);
+@import url('page360.css') screen and (width <= 820px);

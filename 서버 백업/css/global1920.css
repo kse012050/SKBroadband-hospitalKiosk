@@ -1,0 +1,16 @@
+
+
+/* 팝업 */
+
+
+/* 해더 */
+
+
+
+/* 푸터 */
+footer{padding-block: 40px;}
+footer h2{width: 133px;}
+footer ul{font-size: 20px; line-height: 24px;}
+footer ul li:not(:last-child)::after{height: 18px; margin-inline: 15px;}
+footer address{font-size: 15px; line-height: 22px;}
+footer address dl:not(:last-of-type)::after{height: 13px;}

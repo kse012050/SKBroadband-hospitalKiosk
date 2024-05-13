@@ -1,0 +1,12 @@
+/* 최상단 */
+.topArea{padding-top: 218px; background-image: url(../images/top-BG.png); background-position: center;}
+
+/* 본인 확인 */
+.checkArea .imgArea{aspect-ratio: 944 / 330; margin-bottom: 90px; background-image: url(../images/check-img.png);}
+.checkArea .screenArea{display: flex; justify-content: space-between;}
+.checkArea .screenArea ol:nth-child(1){width: 57.33%;}
+.checkArea .screenArea ol:nth-child(2){width: 37.66%;}
+.checkArea .downloadArea p{margin-left: auto;}
+.checkArea .downloadArea{border-radius: 16px; display: flex; align-items: center;}
+
+/* 슬라이더 */

@@ -1,0 +1,12 @@
+/* 최상단 */
+
+
+/* 본인 확인 */
+
+
+/* 슬라이더 */
+.sliderArea .swiper .swiper-slide{text-align: right;}
+.sliderArea .swiper .swiper-slide div{text-align: left;}
+.sliderArea .swiper .swiper-pagination .swiper-pagination-bullet{width: 9px; height: 9px; border-radius: 5px;}
+.sliderArea .swiper .swiper-pagination .swiper-pagination-bullet-active{width: 18px;}
+.sliderArea .swiper .swiper-pagination span:not(:last-child){margin-right: 7px;}

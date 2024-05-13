@@ -1,0 +1,31 @@
+/* 최상단 */
+.topArea{margin-bottom: 50px;}
+.topArea b{font-size: 24px; line-height: 29px; margin-bottom: 34px;}
+.topArea h2{font-size: 60px; line-height: 72px; margin-bottom: 54px;}
+.topArea p{font-size: 20px; line-height: 30px; margin-bottom: 70px;}
+.topArea button{width: 268px; height: 62px; font-size: 20px;}
+
+/* 본인 확인 */
+.checkArea{margin-bottom: 180px;}
+.checkArea > strong{font-size: 48px; line-height: 57px; margin-bottom: 70px;}
+.checkArea > p{font-size: 24px; line-height: 36px;}
+.checkArea > p:nth-of-type(1){margin-bottom: 228px;}
+.checkArea > p:nth-of-type(1)::after{top: calc(100% - 22px); width: 540px;}
+.checkArea .screenArea{margin-bottom: 50px;}
+.checkArea .screenArea ol::before{font-size: 18px; line-height: 48px; margin-bottom: 50px;}
+.checkArea .downloadArea{padding: 39px 70px;}
+.checkArea .downloadArea strong{font-size: 28px;}
+.checkArea .downloadArea p{font-size: 25px;}
+.checkArea .downloadArea button{margin-left: 16px; width: 174px; line-height: 64px;} 
+
+/* 슬라이더 */
+.sliderArea{margin-bottom: 240px;}
+.sliderArea .swiper mark{font-size: 20px; line-height: 24px; margin-bottom: 50px;}
+.sliderArea .swiper .swiper-slide{display: flex; align-items: center; justify-content: space-between;}
+.sliderArea .swiper .swiper-slide div strong{font-size: 48px; line-height: 57px; margin-bottom: 40px;}
+.sliderArea .swiper .swiper-slide div p{font-size: 24px; line-height: 36px;}
+.sliderArea .swiper .swiper-slide img{max-width: 560px;}
+.sliderArea .swiper .swiper-pagination{bottom: 178px;}
+.sliderArea .swiper .swiper-pagination .swiper-pagination-bullet{width: 10px; height: 10px; border-radius: 5px;}
+.sliderArea .swiper .swiper-pagination .swiper-pagination-bullet-active{width: 20px;}
+.sliderArea .swiper .swiper-pagination span:not(:last-child){margin-right: 10px;}
