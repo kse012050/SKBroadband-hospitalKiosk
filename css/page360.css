@@ -74,3 +74,8 @@
 .usePage .processArea ol li:nth-child(1){width: 63.125%;}
 .usePage .processArea ol li:nth-child(2){width: 80.625%;}
 .usePage .processArea ol li:nth-child(3){width: 63.125%;}
+
+
+/* 기술력 */
+.technologyPage .performanceArea ul li::before{width: 100px; margin-bottom: 15px;}
+.technologyPage .performanceArea ul li strong{font-size: 16px; line-height: 22px; min-height: 44px; margin-bottom: 20px;}

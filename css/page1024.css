@@ -51,3 +51,7 @@
 
 
 /* 이용안내 */
+
+
+/* 기술력 */
+.technologyPage .performanceArea ul li strong{font-size: 22px; line-height: 32px; min-height: 64px;}

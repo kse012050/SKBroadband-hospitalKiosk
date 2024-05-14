@@ -54,3 +54,11 @@
 .usePage .processArea ol li small{position: absolute; left: 0; top: calc(100% + 5px); width: 100%; font-size: 13px; line-height: 16px;}
 /* .usePage .processArea ol li:not(:last-child){position: relative;}
 .usePage .processArea ol li:not(:last-child)::after{content: ''; width: 133px; aspect-ratio: 133 / 12; position: absolute; left: 100%; top: 50%; translate: -100% -50%; background: url(../images/use-arrow.png) no-repeat center / cover;} */
+
+
+
+/* 기술력 */
+.technologyPage .performanceArea ul{display: flex; gap: 20px;}
+.technologyPage .performanceArea ul li{flex: 1;}
+.technologyPage .performanceArea ul li::before{width: 120px; margin-bottom: 30px;}
+.technologyPage .performanceArea ul li strong{margin-bottom: 30px;}

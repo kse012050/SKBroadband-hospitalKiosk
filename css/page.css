@@ -80,3 +80,23 @@
 .usePage .processArea ol li:nth-child(3)::before{aspect-ratio: 257 / 172; background-image: url(../images/use-process03.png);}
 .usePage .processArea ol li:has(small){position: relative;}
 .usePage .processArea ol li small{color: #999;}
+
+
+/* 기술력 */
+.technologyPage table{width: 100%; font-size: 14px; line-height: 17px; color: #222;}
+.technologyPage table thead{background-color: #f8f8f8;}
+.technologyPage table :is(th, b){font-weight: 700;}
+.technologyPage table :is(th, td){vertical-align: middle;}
+.technologyPage table thead th{height: 60px; border-top: 2px solid black;  box-sizing: border-box;}
+.technologyPage table tbody{border-width: 1px 0; border-style: solid; border-color: #F1F1F1;}
+.technologyPage table tbody tr > *{border-bottom: 1px solid #f1f1f1; box-sizing: border-box;}
+.technologyPage table tbody tr > *:not(:last-child){border-right: 1px solid #f1f1f1;}
+.technologyPage .performanceArea ul li::before{content: ''; display: block; margin-inline: auto; aspect-ratio: 120 / 44; background: url(../images/technology-performance.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%;}
+.technologyPage .performanceArea ul li strong{display: flex; flex-direction: column; justify-content: center; align-items: center; color: #222; font-weight: 600; text-align: center;}
+.technologyPage .performanceArea ul li strong mark{color: var(--color-point);}
+.technologyPage .performanceArea ul li:nth-child(1) table tbody tr td{height: 40px;}
+.technologyPage .performanceArea ul li:nth-child(2) table tbody tr td{height: 60px;}
+.technologyPage .performanceArea ul li:nth-child(3) table tbody tr:nth-child(1) td{height: 56px;}
+.technologyPage .performanceArea ul li:nth-child(3) table tbody tr:nth-child(2) td{height: 184px;}
+.technologyPage .performanceArea ul li:nth-child(4) table:nth-of-type(1) tbody tr td{height: 83px;}
+.technologyPage .performanceArea ul li:nth-child(4) table:nth-of-type(2) tbody tr td{height: 97px;}
