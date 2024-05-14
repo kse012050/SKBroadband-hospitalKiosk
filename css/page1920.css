@@ -32,9 +32,9 @@
 
 
 /* 시스템 페이지 */
-.systemPage section h2{font-size: 48px; line-height: 57px;}
-.systemPage section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 70px;}
-.systemPage section > p{font-size: 24px; line-height: 36px;}
+[class*="Page"] section h2{font-size: 48px; line-height: 57px;}
+[class*="Page"] section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 70px;}
+[class*="Page"] section > p{font-size: 24px; line-height: 36px;}
 
 .systemPage .dutyArea ol{--gap: 30px;}
 .systemPage .dutyArea ol li :is(mark, strong){font-size: 20px;}
@@ -45,4 +45,7 @@
 .systemPage .proofArea ul li p{font-size: 24px; line-height: 36px;}
 .systemPage .proofArea ul li p::after{margin-top: 40px;}
 .systemPage .proofArea ul li mark{font-size: 18px; line-height: 21px; margin-top: 30px;}
-.systemPage .proofArea small + p{max-width: 700px; margin-bottom: 70px;}
+.systemPage .proofArea > small + p{max-width: 700px; margin-bottom: 70px;}
+
+
+/* 이용안내 */

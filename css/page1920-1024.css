@@ -13,12 +13,12 @@
 
 
 /* 시스템 페이지 */
-.systemPage section h2:has(+ p){margin-bottom: 30px;}
+[class*="Page"] section h2:has(+ p){margin-bottom: 30px;}
 
-.systemPage .dutyArea{padding-top: 260px;}
-.systemPage section{padding-bottom: 120px;}
-.systemPage section:not(.dutyArea){padding-top: 120px;}
-.systemPage section small{font-size: 18px; line-height: 30px; padding-top: 30px; margin-top: 50px;}
+[class*="Page"] > :first-child{padding-top: 260px;}
+[class*="Page"] section{padding-bottom: 120px;}
+[class*="Page"] section:not(:first-child){padding-top: 120px;}
+[class*="Page"] section > small{font-size: 18px; line-height: 30px; padding-top: 30px; margin-top: 50px;}
 
 
 .systemPage .dutyArea ol{display: flex; gap: var(--gap); justify-content: space-between; position: relative;}
@@ -40,3 +40,17 @@
 .systemPage .proofArea ol::after{width: 214px;}
 .systemPage .proofArea ol li{font-size: 20px; line-height: 24px;}
 .systemPage .proofArea ol li::before{margin-bottom: 30px;}
+
+
+/* 이용안내 */
+.usePage section ol li{font-size: 16px; line-height: 22px;}
+.usePage section ol li b::before{font-size: 12px; width: 20px; margin-bottom: 8px;}
+.usePage section ol li::before{margin-bottom: 20px;}
+.usePage :is(.checkArea, .procedureArea) ol li{flex: 1;}
+.usePage .processArea ol{display: flex; justify-content: space-between; align-items: center;}
+.usePage .processArea ol li:nth-child(1){width: 21.41%;}
+.usePage .processArea ol li:nth-child(2){width: 41.41%;}
+.usePage .processArea ol li:nth-child(3){width: 21.41%;}
+.usePage .processArea ol li small{position: absolute; left: 0; top: calc(100% + 5px); width: 100%; font-size: 13px; line-height: 16px;}
+/* .usePage .processArea ol li:not(:last-child){position: relative;}
+.usePage .processArea ol li:not(:last-child)::after{content: ''; width: 133px; aspect-ratio: 133 / 12; position: absolute; left: 100%; top: 50%; translate: -100% -50%; background: url(../images/use-arrow.png) no-repeat center / cover;} */

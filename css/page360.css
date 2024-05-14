@@ -33,15 +33,16 @@
 
 
 /* 시스템 페이지 */
-.systemPage section h2{font-size: 28px; line-height: 33px;}
-.systemPage section h2:has(+ p){margin-bottom: 20px;}
-.systemPage section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 50px;}
-.systemPage section > p{font-size: 15px; line-height: 20px;}
-.systemPage section small{font-size: 13px; line-height: 18px; padding-top: 20px; margin-top: 40px;}
+[class*="Page"] section h2{font-size: 28px; line-height: 33px;}
+[class*="Page"] section h2:has(+ p){margin-bottom: 20px;}
+[class*="Page"] section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 50px;}
+[class*="Page"] section > p{font-size: 15px; line-height: 20px;}
+[class*="Page"] section > small{font-size: 13px; line-height: 18px; padding-top: 20px; margin-top: 40px;}
 
-.systemPage .dutyArea{padding-top: 138px;}
-.systemPage section{padding-bottom: 80px;}
-.systemPage section:not(.dutyArea){padding-top: 80px;}
+[class*="Page"] > :first-child{padding-top: 138px;}
+[class*="Page"] section{padding-bottom: 80px;}
+[class*="Page"] section:not(:first-child){padding-top: 80px;}
+
 .systemPage .dutyArea ol li{padding-left: 40px; position: relative; text-align: left;}
 .systemPage .dutyArea ol li:not(:last-child){padding-bottom: 40px;}
 .systemPage .dutyArea ol li::before{margin-bottom: 20px;}
@@ -60,3 +61,16 @@
 .systemPage .proofArea ol li:not(:last-child){margin-bottom: 138px;}
 .systemPage .proofArea ol li::before{margin-bottom: 12px;}
 .systemPage .proofArea ol::after{width: 108px; rotate: 90deg;}
+
+
+/* 이용안내 */
+.usePage section ol li{font-size: 12px; line-height: 15px;}
+.usePage section ol li b::before{font-size: 10px; width: 15px; margin-bottom: 6px;}
+.usePage section ol li::before{margin-bottom: 15px;}
+.usePage :is(.checkArea, .procedureArea) ol{flex-wrap: wrap; justify-content: center;}
+.usePage :is(.checkArea, .procedureArea) ol li{width: 100px;}
+.usePage .processArea ol li{margin-inline: auto;}
+.usePage .processArea ol li:not(:last-child){margin-bottom: 80px;}
+.usePage .processArea ol li:nth-child(1){width: 63.125%;}
+.usePage .processArea ol li:nth-child(2){width: 80.625%;}
+.usePage .processArea ol li:nth-child(3){width: 63.125%;}

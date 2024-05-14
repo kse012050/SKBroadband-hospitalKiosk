@@ -38,10 +38,12 @@
 
 
 /* 시스템 페이지 */
-.systemPage{text-align: center;}
-.systemPage section h2{font-weight: 500;}
-.systemPage section > p{font-weight: 400;}
-.systemPage section small{color: #666; display: block; margin-inline: auto; border-top: 1px solid #dedede;}
+[class*="Page"]{text-align: center;}
+[class*="Page"] section h2{font-weight: 500;}
+[class*="Page"] section > p{font-weight: 400;}
+[class*="Page"] section > small{color: #666; display: block; margin-inline: auto; border-top: 1px solid #dedede;}
+[class*="Page"] section:nth-child(2n){--backgroundColor: #F8F8F8; background-color: var(--backgroundColor); box-shadow: 0 0 0 100vmax var(--backgroundColor); clip-path: inset(0 -100vmax);}
+
 
 .systemPage .dutyArea ol li::before{content: ''; display: block; aspect-ratio: 380 / 370; background: url('../images/img-system.png') no-repeat left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)) / 100%;}
 .systemPage .dutyArea ol li :is(mark, strong){display: block; font-weight: 600;}
@@ -52,7 +54,6 @@
 .systemPage .dutyArea ol li strong{color: #222;}
 .systemPage .dutyArea ol li p{font-weight: 400; color: #666;}
 
-.systemPage .processArea{--backgroundColor: #F8F8F8; background-color: var(--backgroundColor); box-shadow: 0 0 0 100vmax var(--backgroundColor); clip-path: inset(0 -100vmax);}
 .systemPage .processArea::after{content: ''; display: block;}
 
 .systemPage .proofArea ul li p::after{content: ''; display: block; aspect-ratio: 560 / 284; background: url(../images/system-ai.png) no-repeat left top calc((100% / (var(--idxTotal) - 1) * var(--styleIdx))) / 100%;}
@@ -63,3 +64,19 @@
 .systemPage .proofArea ol::after{content: ''; aspect-ratio: 214 / 178; position: absolute; left: 50%; top: 50%; /* transform: translate(-50%, -50%); */ translate: -50% -50%; background: url(../images/system-arrow.png) no-repeat center / cover;}
 .systemPage .proofArea ol li{font-weight: 600;}
 .systemPage .proofArea ol li::before{content: ''; display: block; width: 130px; aspect-ratio: 130 / 100; background: url(../images/icon-system.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%; margin-inline: auto;}
+
+
+/* 이용안내 */
+.usePage section ol li{counter-increment: olList;}
+.usePage section ol li::before{content: ''; display: block; background-size: 100%;}
+.usePage section ol li b{font-weight: 600; display: block;}
+.usePage section ol li b::before{content: counter(olList); display: flex; justify-content: center; align-items: center; line-height: 0; aspect-ratio: 1; margin-inline: auto; color: white; background-color: black; border-radius: 100%;}
+.usePage :is(.checkArea, .procedureArea) ol{display: flex; gap: 30px 2.5%;}
+.usePage :is(.checkArea, .procedureArea) ol li::before{aspect-ratio: 216 / 348; background-position: left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx));}
+.usePage .checkArea ol li::before{background-image: url(../images/use-ckeck.png);}
+.usePage .procedureArea ol li::before{background-image: url(../images/use-procedure.png);}
+.usePage .processArea ol li:nth-child(1)::before{aspect-ratio: 257 / 144; background-image: url(../images/use-process01.png);}
+.usePage .processArea ol li:nth-child(2)::before{aspect-ratio: 497 / 345; background-image: url(../images/use-process02.png);}
+.usePage .processArea ol li:nth-child(3)::before{aspect-ratio: 257 / 172; background-image: url(../images/use-process03.png);}
+.usePage .processArea ol li:has(small){position: relative;}
+.usePage .processArea ol li small{color: #999;}
