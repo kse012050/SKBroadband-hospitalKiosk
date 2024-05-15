@@ -16,10 +16,14 @@ body{--spacing: 20px;}
 mark[class*="point"]{font-size: 15px; line-height: 18px; margin-top: 20px;}
 
 
+/* 플로팅 메뉴 */
+.floating{position: fixed; left: 20px; bottom: 20px; width: calc(100% - 40px); height: 50px; font-size: 16px; font-weight: 700;}
+
+
 /* 해더 */
-header{padding: 20px 10px;}
+header{padding: 11px 10px;}
 header h1{max-width: 100px;}
-header [class*="btn"]{position: fixed; left: 20px; bottom: 20px; width: calc(100% - 40px); height: 50px; font-size: 16px; font-weight: 700; border-radius: 8px;}
+header [class*="btn"]{display: none;}
 header button:not([class]){width: 38px; aspect-ratio: 1; text-indent: -9999px; background: url(../images/icon-menu.png) no-repeat left top calc(var(--styleIdx) * 100%) / 100%;}
 header > button:not([class]):first-of-type{margin-left: auto; --styleIdx: 0;}
 header nav{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 100;}

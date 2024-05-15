@@ -8,6 +8,10 @@ body{--spacing: 40px;}
 [class*="popup"] > div form fieldset ul li:has(input){width: 47.87%;}
 
 
+/* 플로팅 메뉴 */
+.floating{position: fixed; right: 100px; bottom: 50px; width: 232px; height: 62px; font-size: 20px; font-weight: 700;}
+
+
 /* 해더 */
 header{padding: 25px max(max(calc((var(--fullWidth) - 1920px - var(--scrollWidth)) / 2)), 40px);}
 header h1{max-width: 158px;}

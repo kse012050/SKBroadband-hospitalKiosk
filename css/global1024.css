@@ -13,7 +13,7 @@ mark[class*="point"]{font-size: 16px; line-height: 19px; margin-top: 25px;}
 
 
 /* 푸터 */
-footer{padding-block: 35px;}
+footer{padding-block: 35px 120px;}
 footer h2{width: 120px;}
 footer ul{font-size: 17px; line-height: 20px;}
 footer ul li:not(:last-child)::after{height: 13px;}

@@ -32,13 +32,8 @@ $(document).ready(function(){
         })
     }
 
-    // 슬라이더
-    slider()
-
-    // 메뉴
-    $('header [data-menu]').click(function(){
-        $('header nav').toggleClass('active')
-    })
+    // 모바일 메뉴
+    mobileMenu()
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0
@@ -84,21 +79,10 @@ function popup(){
     })
 }
 
-// 슬라이더
-function slider(){
-    var swiper = new Swiper(".mySwiper", {
-        // effect: "fade",
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        
-        centeredSlides: true,
-        autoplay: {
-            delay: 4000,
-            // disableOnInteraction: true
-        },
-        fadeEffect: {
-            crossFade: true
-        },
-    });
+
+// 모바일 메뉴
+function mobileMenu(){
+    $('header [data-menu]').click(function(){
+        $('header nav').toggleClass('active')
+    })
 }
