@@ -2,14 +2,24 @@
 .topArea{padding-top: 218px; background-image: url(../images/top-BG.png); background-position: center;}
 
 /* 본인 확인 */
-.checkArea .imgArea{aspect-ratio: 944 / 330; margin-bottom: 90px; background-image: url(../images/check-img.png);}
-.checkArea .screenArea{display: flex; justify-content: space-between;}
-.checkArea .screenArea ol:nth-child(1){width: 57.33%;}
-.checkArea .screenArea ol:nth-child(2){width: 37.66%;}
-.checkArea .downloadArea p{margin-left: auto;}
-.checkArea .downloadArea{border-radius: 16px; display: flex; align-items: center;}
+.checkArea .imgArea{aspect-ratio: 944 / 330; margin-bottom: 50px; background-image: url(../images/check-img.png);}
+.screenArea div{display: flex; justify-content: space-between;}
+.screenArea div ol:nth-child(1){width: 57.33%;}
+.screenArea div ol:nth-child(2){width: 37.66%;}
 
-/* 슬라이더 */
+
+/* 다운로드 */
+.downloadArea{display: flex; justify-content: space-between; align-items: center; padding-block: 60px;}
+.downloadArea p span{display: block;}
+.downloadArea button{height: 64px;}
+
+
+/* 시스템 특장점 */
+.featuresArea ol li{display: flex; justify-content: space-between; align-items: center; gap: 30px;}
+.featuresArea ol li div::before{font-size: 70px; transform: translateY(calc(-100% + 25px));}
+.featuresArea ol li div b{margin-bottom: 30px;}
+.featuresArea ol li div p{font-size: 20px; line-height: 30px;}
+.featuresArea ol li:nth-child(2)::after{order: -1;}
 
 
 /* 시스템 페이지 */

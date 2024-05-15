@@ -1,39 +1,31 @@
 /* 최상단 */
 .topArea{margin-bottom: 60px;}
-.topArea b{font-size: 19px; line-height: 23px; margin-bottom: 27px;}
+.topArea > b{font-size: 19px; line-height: 23px; margin-bottom: 27px;}
 .topArea h2{font-size: 48px; line-height: 57px; margin-bottom: 45px;}
 .topArea p{font-size: 16px; line-height: 24px; margin-bottom: 56px;}
 .topArea button{width: 215px; height: 50px; font-size: 16px;}
 
 /* 본인 확인 */
-.checkArea{margin-bottom: 140px;}
-.checkArea > strong{font-size: 42px; line-height: 50px; margin-bottom: 85px;}
-.checkArea > p{font-size: 21px; line-height: 32px;}
-.checkArea > p:nth-of-type(1){margin-bottom: 202px;}
-.checkArea > p:nth-of-type(1)::after{top: calc(100% - 20px); width: 486px;}
-.checkArea .screenArea{margin-bottom: 67px;}
-.checkArea .screenArea ol::before{font-size: 16px; line-height: 44px; margin-bottom: 45px;}
-.checkArea .downloadArea{padding: 37px 60px;}
-.checkArea .downloadArea strong{font-size: 24px;}
-.checkArea .downloadArea p{font-size: 21px;}
-.checkArea .downloadArea button{margin-left: 20px; width: 164px; line-height: 60px;}
+.checkArea{margin-bottom: 100px;}
+:is(.checkArea, .screenArea) > p:nth-of-type(1){font-size: 32px; line-height: 38px; margin-bottom: 40px;}
+:is(.checkArea, .screenArea) > p:nth-of-type(2){font-size: 21px; line-height: 32px;}
+:is(.checkArea, .screenArea) button{height: 50px; padding-inline: 54px; font-size: 16px;}
+.checkArea > strong{font-size: 42px; line-height: 50px; margin-bottom: 60px;}
+.screenArea{padding-block: 100px;}
+.screenArea div ol::before{font-size: 16px; line-height: 44px; margin-bottom: 45px;}
 
 
-/* 슬라이더 */
-.sliderArea{margin-bottom: 196px;}
-.sliderArea .swiper mark{font-size: 17px; line-height: 20px;}
-.sliderArea .swiper .swiper-slide div strong{font-size: 42px; line-height: 50px; margin-bottom: 37px;}
-.sliderArea .swiper .swiper-slide div p{font-size: 21px; line-height: 32.5px;}
-.sliderArea .swiper .swiper-slide img{max-width: clamp(506px, 49.12%, 467px);}
-@media screen and (1000px <= width) {
-    .sliderArea .swiper mark{margin-bottom: 46px;}
-    .sliderArea .swiper .swiper-slide div{position: absolute; left: var(--spacing); top: 50%; transform: translateY(-50%);}
-    .sliderArea .swiper .swiper-pagination{bottom: 163px;}
-}
-@media screen and (width < 1000px) {
-    .sliderArea .swiper mark{margin-bottom: 48px;}
-    .sliderArea .swiper .swiper-pagination{bottom: 600px;}
-}
+/* 다운로드 */
+.downloadArea{margin-bottom: 150px;}
+.downloadArea p{font-size: 26px; line-height: 38px;}
+.downloadArea button{width: 212px; font-size: 21px;}
+
+
+/* 시스템 특장점 */
+.featuresArea{margin-bottom: 200px;}
+.featuresArea > strong{font-size: 42px; line-height: 50px; margin-bottom: 60px;}
+.featuresArea ol li::after{width: 324px;}
+.featuresArea ol li div b{font-size: 32px; line-height: 42px;}
 
 
 /* 시스템 페이지 */
