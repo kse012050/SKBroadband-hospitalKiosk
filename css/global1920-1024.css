@@ -9,7 +9,7 @@ body{--spacing: 40px;}
 
 
 /* 해더 */
-header{padding-block: 25px;}
+header{padding: 25px 40px; }
 header h1{max-width: 158px;}
 header button{font-size: 17px; font-weight: 700; width: 126px; height: 50px;}
 header button:not([class]){display: none;}

@@ -27,19 +27,68 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <header class="contentSize">
-        <h1><img src="images/logo.png" alt="SK broadband"></h1>
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt="SK broadband"></a></h1>
         <button data-menu>메뉴 열기</button>
         <nav>
             <ul>
-                <li><a href="">시스템 소재</a></li>
-                <li><a href="">이용안내</a></li>
-                <li><a href="">기술력</a></li>
+                <li><a href="system.html">시스템 소재</a></li>
+                <li><a href="use.html">이용안내</a></li>
+                <li><a href="technology.html">기술력</a></li>
             </ul>
             <button data-menu>메뉴 닫기</button>
         </nav>
         <button class="btn-point" data-popupOpen="inquiry">도입문의</button>
     </header>
+
+    <div class="popup" data-popup="inquiry">
+        <div>
+            <form id="inquiryForm" onsubmit="return false">
+                <fieldset>
+                    <strong>도입문의</strong>
+                    <p>빠른 시일안에 담당자가 확인하여, 메일 or 연락처로 회신드리겠습니다.</p>
+                    <ul>
+                        <li>
+                            <label for="">업체명</label>
+                            <div>
+                                <input type="text" placeholder="업체명을 입력해주세요" required name="company_name">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">담당자 성함</label>
+                            <div>
+                                <input type="text" placeholder="담당자 성함/직책을 입력해주세요" required name="person_in_charge">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">연락처</label>
+                            <div>
+                                <input type="text" placeholder="담당자 연락처를 입력해주세요" required name="contact">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">메일주소</label>
+                            <div>
+                                <input type="text" placeholder="회신드릴 메일 주소를 입력해주세요." required name="email">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">상세내용</label>
+                            <div>
+                                <textarea name="content" id="" placeholder="문의사항을 작성해주세요." required></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <div>
+                        <input type="checkbox" required value="y" id="agree" name="agree">
+                        <label for="agree">개인정보 수집 및 이용안내에 동의합니다.</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="문의하기" onclick="api('inquiryForm')">
+            </form>
+            <button data-popupClose="inquiry">팝업 닫기</button>
+        </div>
+    </div>
 
     <div class="usePage contentSize">
         <section class="checkArea">

@@ -77,7 +77,7 @@
 
 
 /* 기술력 */
-.technologyPage > small{margin-bottom: 80px;}
+.technologyPage section > small{margin-bottom: 80px;}
 .technologyPage .performanceArea > ul li::before{width: 100px; margin-bottom: 15px;}
 .technologyPage .performanceArea > ul li:not(:last-child){margin-bottom: 40px;}
 .technologyPage .performanceArea > ul li strong{font-size: 16px; line-height: 22px; min-height: 44px; margin-bottom: 20px;}

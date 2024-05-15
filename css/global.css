@@ -44,7 +44,7 @@ body:has([class*="popup"].active){overflow: hidden;}
 
 
 /* 해더 */
-header{position: fixed; left: 0; top: 0; width: 100%; display: flex; align-items: center; z-index: 100;}
+header{position: fixed; left: 0; top: 0; width: 100%; display: flex; align-items: center; z-index: 100; box-sizing: border-box;}
 header.active{background-color: white;}
 header nav ul{font-weight: 700;}
 

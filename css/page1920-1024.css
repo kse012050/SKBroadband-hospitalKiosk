@@ -59,7 +59,7 @@
 
 
 /* 기술력 */
-.technologyPage > small{margin-bottom: 120px;}
+.technologyPage section > small{margin-bottom: 120px;}
 .technologyPage .performanceArea > ul{display: flex; gap: 20px;}
 .technologyPage .performanceArea > ul li{flex: 1;}
 .technologyPage .performanceArea > ul li::before{width: 120px; margin-bottom: 30px;}

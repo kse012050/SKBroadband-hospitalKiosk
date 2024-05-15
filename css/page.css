@@ -89,7 +89,7 @@
 .technologyPage table tbody{border-width: 1px 0; border-style: solid; border-color: #F1F1F1;}
 .technologyPage table tbody tr > *{border-bottom: 1px solid #f1f1f1; box-sizing: border-box;}
 .technologyPage table tbody tr > *:not(:last-child){border-right: 1px solid #f1f1f1;}
-.technologyPage > small{margin-top: 60px; margin-inline: auto;}
+.technologyPage section > small{margin-top: 60px; margin-inline: auto;}
 .technologyPage .performanceArea > ul li::before{content: ''; display: block; margin-inline: auto; aspect-ratio: 120 / 44; background: url(../images/technology-performance.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%;}
 .technologyPage .performanceArea > ul li strong{display: flex; flex-direction: column; justify-content: center; align-items: center; color: #222; font-weight: 600; text-align: center;}
 .technologyPage .performanceArea > ul li strong mark{color: var(--color-point);}
