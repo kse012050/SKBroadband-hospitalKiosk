@@ -41,7 +41,8 @@
 [class*="Page"]{text-align: center;}
 [class*="Page"] section h2{font-weight: 500;}
 [class*="Page"] section > p{font-weight: 400;}
-[class*="Page"] section > small{color: #666; display: block; margin-inline: auto; border-top: 1px solid #dedede;}
+[class*="Page"] section > small{color: #666; display: block; margin-inline: auto;}
+[class*="Page"]:not(.technologyPage) section > small{border-top: 1px solid #dedede;}
 [class*="Page"] section:nth-child(2n){--backgroundColor: #F8F8F8; background-color: var(--backgroundColor); box-shadow: 0 0 0 100vmax var(--backgroundColor); clip-path: inset(0 -100vmax);}
 
 
@@ -57,9 +58,6 @@
 .systemPage .processArea::after{content: ''; display: block;}
 
 .systemPage .proofArea ul li p::after{content: ''; display: block; aspect-ratio: 560 / 284; background: url(../images/system-ai.png) no-repeat left top calc((100% / (var(--idxTotal) - 1) * var(--styleIdx))) / 100%;}
-.systemPage .proofArea ul li mark{display: block; font-weight: 600; padding-block: 12px; border-radius: 100px;}
-.systemPage .proofArea ul li:nth-child(1) mark{color: var(--color-point); background-color: rgba(239, 65, 61, 0.1);}
-.systemPage .proofArea ul li:nth-child(2) mark{color: #FF8300; background-color: rgba(255, 131, 0, 0.1);}
 .systemPage .proofArea ol{position: relative;}
 .systemPage .proofArea ol::after{content: ''; aspect-ratio: 214 / 178; position: absolute; left: 50%; top: 50%; /* transform: translate(-50%, -50%); */ translate: -50% -50%; background: url(../images/system-arrow.png) no-repeat center / cover;}
 .systemPage .proofArea ol li{font-weight: 600;}
@@ -91,12 +89,51 @@
 .technologyPage table tbody{border-width: 1px 0; border-style: solid; border-color: #F1F1F1;}
 .technologyPage table tbody tr > *{border-bottom: 1px solid #f1f1f1; box-sizing: border-box;}
 .technologyPage table tbody tr > *:not(:last-child){border-right: 1px solid #f1f1f1;}
-.technologyPage .performanceArea ul li::before{content: ''; display: block; margin-inline: auto; aspect-ratio: 120 / 44; background: url(../images/technology-performance.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%;}
-.technologyPage .performanceArea ul li strong{display: flex; flex-direction: column; justify-content: center; align-items: center; color: #222; font-weight: 600; text-align: center;}
-.technologyPage .performanceArea ul li strong mark{color: var(--color-point);}
-.technologyPage .performanceArea ul li:nth-child(1) table tbody tr td{height: 40px;}
-.technologyPage .performanceArea ul li:nth-child(2) table tbody tr td{height: 60px;}
-.technologyPage .performanceArea ul li:nth-child(3) table tbody tr:nth-child(1) td{height: 56px;}
-.technologyPage .performanceArea ul li:nth-child(3) table tbody tr:nth-child(2) td{height: 184px;}
-.technologyPage .performanceArea ul li:nth-child(4) table:nth-of-type(1) tbody tr td{height: 83px;}
-.technologyPage .performanceArea ul li:nth-child(4) table:nth-of-type(2) tbody tr td{height: 97px;}
+.technologyPage > small{margin-top: 60px; margin-inline: auto;}
+.technologyPage .performanceArea > ul li::before{content: ''; display: block; margin-inline: auto; aspect-ratio: 120 / 44; background: url(../images/technology-performance.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%;}
+.technologyPage .performanceArea > ul li strong{display: flex; flex-direction: column; justify-content: center; align-items: center; color: #222; font-weight: 600; text-align: center;}
+.technologyPage .performanceArea > ul li strong mark{color: var(--color-point);}
+.technologyPage .performanceArea > ul li:nth-child(1) table tbody tr td{height: 40px;}
+.technologyPage .performanceArea > ul li:nth-child(2) table tbody tr td{height: 60px;}
+.technologyPage .performanceArea > ul li:nth-child(3) table tbody tr:nth-child(1) td{height: 56px;}
+.technologyPage .performanceArea > ul li:nth-child(3) table tbody tr:nth-child(2) td{height: 184px;}
+.technologyPage .performanceArea > ul li:nth-child(4) table:nth-of-type(1) tbody tr td{height: 83px;}
+.technologyPage .performanceArea > ul li:nth-child(4) table:nth-of-type(2) tbody tr td{height: 97px;}
+.technologyPage .performanceArea > strong{display: block; font-weight: 600;}
+.technologyPage .performanceArea > strong::before{content: ''; display: block; width: 44px; margin-inline: auto; aspect-ratio: 1; background: url(../images/technology-reliability.png) no-repeat center / cover;}
+.technologyPage .performanceArea > div{overflow: auto;}
+.technologyPage .performanceArea > div table{min-width: 945px;}
+.technologyPage .performanceArea > div table tbody tr td{vertical-align: top; width: 33.33%;}
+.technologyPage .performanceArea > div table tbody tr td p::before{content: ''; display: block; margin-inline: auto; background-position: center; background-size: cover; margin-bottom: 20px;}
+.technologyPage .performanceArea > div table tbody tr td .logoBox{display: flex; flex-wrap: wrap; justify-content: center;}
+.technologyPage .performanceArea > div table tbody tr td .logoBox li{width: 100px; aspect-ratio: 100 / 22; background-position: left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)); background-size: 100%; white-space: nowrap; text-indent: -9999px;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(1) p{margin-bottom: 12px;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(1) p::before{width: 146px; aspect-ratio: 146 / 170; background-image: url(../images/technology-performance-img01.png);}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(2) .logoBox{gap: 15px; max-width: 215px; margin-inline: auto;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(2) .logoBox li{background-image: url(../images/technology-performance-logo01.png);}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(2) p{margin-bottom: 35px;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(2) p::before{width: 160px; aspect-ratio: 160 / 170; background-image: url(../images/technology-performance-img02.png);}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .iconBox{max-width: 248px; margin-inline: auto; display: flex; flex-wrap: wrap; margin-bottom: 27px;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .iconBox li{width: 50%; padding: 15px; box-sizing: border-box;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .iconBox li::before{content: ''; display: block; margin: 0 auto 12px; width: 30px; aspect-ratio: 1; background: url(../images/technology-performance-icon.png) no-repeat left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)) / 100%;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .iconBox li:nth-child(2n + 1){border-right: 1px solid #F1F1F1;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .iconBox li:nth-child(n + 3){border-top: 1px solid #F1F1F1;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .logoBox{gap: 8px; max-width: 316px; margin-inline: auto;}
+.technologyPage .performanceArea > div table tbody tr td:nth-child(3) .logoBox li{background-image: url(../images/technology-performance-logo02.png);}
+.technologyPage .performanceArea > small:nth-of-type(1){max-width: 1050px;}
+.technologyPage .performanceArea > small:nth-of-type(2){max-width: 1100px;}
+.technologyPage .pointArea > ul:nth-of-type(1){position: relative;}
+.technologyPage .pointArea > ul:nth-of-type(1)::before{content: ''; position: absolute; aspect-ratio: 1; background: url(../images/icon-plus.png) no-repeat center / cover;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li,
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{display: flex; flex-direction: column; justify-content: flex-end; color: white; text-align: left; box-sizing: border-box;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul{display: flex; flex-wrap: wrap; gap: 12px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li{width: calc((100% - 12px) / 2); aspect-ratio: 164 / 209; padding: 20px; background: url(../images/technology-point-img01.png) no-repeat left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)) / 100%;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li b{font-weight: 700;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{aspect-ratio: 340 / 430; padding: 30px 33px; background: url(../images/technology-point-img02.png) no-repeat center / cover; font-weight: 700;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p small{font-weight: 400;}
+.technologyPage .pointArea > b{display: block; font-weight: 500;}
+.technologyPage .pointArea > p{color: #666;}
+.technologyPage .pointArea > ul:nth-of-type(2) li::before{content: ''; display: block; margin-inline: auto; aspect-ratio: 1; background: url(../images/technology-point-icon.png) no-repeat left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)) / 100%;}
+.technologyPage .pointArea > ul:nth-of-type(2) li strong{display: block; font-weight: 600;}
+.technologyPage .pointArea > ul:nth-of-type(2) li p{color: #666;}
+

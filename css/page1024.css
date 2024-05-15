@@ -42,11 +42,9 @@
 [class*="Page"] section > p{font-size: 21px; line-height: 32px;}
 
 .systemPage .dutyArea ol{--gap: 22px;}
-
 .systemPage .proofArea ul{gap: 60px;}
 .systemPage .proofArea ul li p{font-size: 21px; line-height: 32px;}
 .systemPage .proofArea ul li p::after{margin-top: 30px;}
-.systemPage .proofArea ul li mark{font-size: 16px; line-height: 19px; margin-top: 25px;}
 .systemPage .proofArea > small + p{max-width: 600px; margin-bottom: 60px;}
 
 
@@ -54,4 +52,8 @@
 
 
 /* 기술력 */
-.technologyPage .performanceArea ul li strong{font-size: 22px; line-height: 32px; min-height: 64px;}
+.technologyPage .performanceArea > ul li strong{font-size: 22px; line-height: 32px; min-height: 64px;}
+
+.technologyPage .pointArea mark[class*="point"]{margin-bottom: 25px;}
+.technologyPage .pointArea > ul:nth-of-type(1){margin-bottom: 80px;}
+.technologyPage .pointArea > strong{font-size: 21px; line-height: 32px;} 

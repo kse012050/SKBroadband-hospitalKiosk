@@ -18,7 +18,8 @@
 [class*="Page"] > :first-child{padding-top: 260px;}
 [class*="Page"] section{padding-bottom: 120px;}
 [class*="Page"] section:not(:first-child){padding-top: 120px;}
-[class*="Page"] section > small{font-size: 18px; line-height: 30px; padding-top: 30px; margin-top: 50px;}
+[class*="Page"] section > small{font-size: 18px; line-height: 30px;}
+[class*="Page"]:not(.technologyPage) section > small{padding-top: 30px; margin-top: 50px;}
 
 
 .systemPage .dutyArea ol{display: flex; gap: var(--gap); justify-content: space-between; position: relative;}
@@ -58,7 +59,25 @@
 
 
 /* 기술력 */
-.technologyPage .performanceArea ul{display: flex; gap: 20px;}
-.technologyPage .performanceArea ul li{flex: 1;}
-.technologyPage .performanceArea ul li::before{width: 120px; margin-bottom: 30px;}
-.technologyPage .performanceArea ul li strong{margin-bottom: 30px;}
+.technologyPage > small{margin-bottom: 120px;}
+.technologyPage .performanceArea > ul{display: flex; gap: 20px;}
+.technologyPage .performanceArea > ul li{flex: 1;}
+.technologyPage .performanceArea > ul li::before{width: 120px; margin-bottom: 30px;}
+.technologyPage .performanceArea > ul li strong{margin-bottom: 30px;}
+.technologyPage .performanceArea > strong{margin-bottom: 30px;}
+.technologyPage .performanceArea > strong::before{margin-bottom: 20px;}
+.technologyPage .performanceArea > div table tbody tr td{padding-block: 40px;}
+.technologyPage .pointArea > ul:nth-of-type(1){display: flex; justify-content: space-between; gap: 130px; max-width: 810px; margin-inline: auto;}
+.technologyPage .pointArea > ul:nth-of-type(1)::before{width: 30px; left: 50%; top: 57%; transform: translate(-50%);}
+.technologyPage .pointArea > ul:nth-of-type(1) > li{flex: 1;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li b{font-size: 16px; line-height: 19px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li p{font-size: 14px; line-height: 17px; margin-top: 10px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{font-size: 20px; line-height: 24px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p small{font-size: 14px; line-height: 17px; margin-top: 12px;}
+.technologyPage .pointArea > b{margin-bottom: 10px;}
+.technologyPage .pointArea > p{font-size: 14px; line-height: 17px; margin-bottom: 60px;}
+.technologyPage .pointArea > ul:nth-of-type(2){max-width: 760px; margin-inline: auto; display: flex; gap: 80px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li{flex: 1;}
+.technologyPage .pointArea > ul:nth-of-type(2) li::before{width: 100px; margin-bottom: 30px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li strong{font-size: 20px; line-height: 24px; margin-bottom: 12px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li p{font-size: 14px; line-height: 17px;}

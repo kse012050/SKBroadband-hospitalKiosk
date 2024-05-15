@@ -37,7 +37,8 @@
 [class*="Page"] section h2:has(+ p){margin-bottom: 20px;}
 [class*="Page"] section :is(h2 + p, h2:not(:has(+ p))){margin-bottom: 50px;}
 [class*="Page"] section > p{font-size: 15px; line-height: 20px;}
-[class*="Page"] section > small{font-size: 13px; line-height: 18px; padding-top: 20px; margin-top: 40px;}
+[class*="Page"] section > small{font-size: 13px; line-height: 18px;}
+[class*="Page"]:not(.technologyPage) section > small{padding-top: 20px; margin-top: 40px;}
 
 [class*="Page"] > :first-child{padding-top: 138px;}
 [class*="Page"] section{padding-bottom: 80px;}
@@ -55,7 +56,6 @@
 .systemPage .proofArea ul li p{font-size: 15px; line-height: 20px;}
 .systemPage .proofArea ul li p::after{margin-top: 20px;}
 .systemPage .proofArea ul li:not(:last-child){margin-bottom: 40px;}
-.systemPage .proofArea ul li mark{font-size: 15px; line-height: 18px; margin-top: 20px;}
 .systemPage .proofArea small + p{margin-bottom: 40px; margin-top: 60px;}
 .systemPage .proofArea ol li{font-size: 15px; line-height: 20px;}
 .systemPage .proofArea ol li:not(:last-child){margin-bottom: 138px;}
@@ -77,5 +77,25 @@
 
 
 /* 기술력 */
-.technologyPage .performanceArea ul li::before{width: 100px; margin-bottom: 15px;}
-.technologyPage .performanceArea ul li strong{font-size: 16px; line-height: 22px; min-height: 44px; margin-bottom: 20px;}
+.technologyPage > small{margin-bottom: 80px;}
+.technologyPage .performanceArea > ul li::before{width: 100px; margin-bottom: 15px;}
+.technologyPage .performanceArea > ul li:not(:last-child){margin-bottom: 40px;}
+.technologyPage .performanceArea > ul li strong{font-size: 16px; line-height: 22px; min-height: 44px; margin-bottom: 20px;}
+.technologyPage .performanceArea > strong{margin-bottom: 20px;}
+.technologyPage .performanceArea > strong::before{margin-bottom: 15px;}
+.technologyPage .performanceArea > div table tbody tr td{padding-block: 20px;}
+
+.technologyPage .pointArea mark[class*="point"]{margin-bottom: 20px;}
+.technologyPage .pointArea > ul:nth-of-type(1){margin-bottom: 70px;}
+.technologyPage .pointArea > ul:nth-of-type(1)::before{width: 22px; left: 50%; top: 49%; transform: translate(-50%);}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:not(:last-child){margin-bottom: 72px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li b{font-size: 15px; line-height: 18px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:first-child ul li p{font-size: 13px; line-height: 16px; margin-top: 5px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{font-size: 18px; line-height: 21px;}
+.technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p small{font-size: 13px; line-height: 16px; margin-top: 10px;}
+.technologyPage .pointArea > b{font-size: 18px; line-height: 22px; margin-bottom: 12px;}
+.technologyPage .pointArea > p{font-size: 13px; line-height: 18px; margin-bottom: 40px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li:not(:last-child){margin-bottom: 40px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li::before{width: 80px; margin-bottom: 12px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li strong{font-size: 16px; line-height: 20px; margin-bottom: 10px;}
+.technologyPage .pointArea > ul:nth-of-type(2) li p{font-size: 13px; line-height: 18px;}

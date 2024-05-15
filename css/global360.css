@@ -12,6 +12,10 @@ body{--spacing: 20px;}
 [class*="popup"] > div form fieldset ul li:not(:last-child){margin-bottom: 30px;}
 
 
+/* 포인트 */
+mark[class*="point"]{font-size: 15px; line-height: 18px; margin-top: 20px;}
+
+
 /* 해더 */
 header{padding-block: 20px;}
 header h1{max-width: 100px;}

@@ -3,6 +3,10 @@
 /* 팝업 */
 
 
+/* 포인트 */
+mark[class*="point"]{font-size: 18px; line-height: 21px; margin-top: 30px;}
+
+
 /* 해더 */
 
 
