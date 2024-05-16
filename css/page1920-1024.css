@@ -85,7 +85,7 @@
 .technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{font-size: 20px; line-height: 24px;}
 .technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p small{font-size: 14px; line-height: 17px; margin-top: 12px;}
 .technologyPage .pointArea > b{margin-bottom: 10px;}
-.technologyPage .pointArea > p{font-size: 14px; line-height: 17px; margin-bottom: 60px;}
+.technologyPage .pointArea > b + p{font-size: 14px; line-height: 17px; margin-bottom: 60px;}
 .technologyPage .pointArea > ul:nth-of-type(2){max-width: 760px; margin-inline: auto; display: flex; gap: 80px;}
 .technologyPage .pointArea > ul:nth-of-type(2) li{flex: 1;}
 .technologyPage .pointArea > ul:nth-of-type(2) li::before{width: 100px; margin-bottom: 30px;}

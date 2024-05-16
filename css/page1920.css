@@ -8,7 +8,7 @@
 /* 본인 확인 */
 :is(.checkArea, .screenArea) > p:nth-of-type(1){font-size: 34px; line-height: 41px; margin-bottom: 60px;}
 :is(.checkArea, .screenArea) > p:nth-of-type(2){font-size: 24px; line-height: 36px;}
-:is(.checkArea, .screenArea) button{height: 62px; padding-inline: 67px; font-size: 20px;}
+:is(.checkArea, .screenArea) a{line-height: 60px; padding-inline: 67px; font-size: 20px;}
 .checkArea{margin-bottom: 120px;}
 .checkArea > strong{font-size: 50px; line-height: 60px; margin-bottom: 80px;}
 .screenArea{padding-block: 120px;}
@@ -42,6 +42,7 @@
 .systemPage .proofArea ul{gap: 80px;}
 .systemPage .proofArea ul li p{font-size: 24px; line-height: 36px;}
 .systemPage .proofArea ul li p::after{margin-top: 40px;}
+.systemPage .proofArea ul li mark[class*="point"]{margin-top: 30px;}
 .systemPage .proofArea > small + p{max-width: 700px; margin-bottom: 70px;}
 
 

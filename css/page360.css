@@ -9,7 +9,7 @@
 .checkArea{margin-bottom: 80px;}
 :is(.checkArea, .screenArea) > p:nth-of-type(1){font-size: 24px; line-height: 29px; margin-bottom: 25px;}
 :is(.checkArea, .screenArea) > p:nth-of-type(2){font-size: 15px; line-height: 20px;}
-:is(.checkArea, .screenArea) button{height: 40px; padding-inline: 30px; font-size: 13px;}
+:is(.checkArea, .screenArea) a{line-height: 40px; padding-inline: 30px; font-size: 13px;}
 .checkArea > strong{font-size: 28px; line-height: 36px; margin-bottom: 50px;} 
 .checkArea .imgArea{aspect-ratio: 320 / 760; margin-bottom: 30px; background-image: url(../images/check-img-m.png);}
 .screenArea{padding-block: 80px;}
@@ -59,6 +59,7 @@
 .systemPage .proofArea ul li p{font-size: 15px; line-height: 20px;}
 .systemPage .proofArea ul li p::after{margin-top: 20px;}
 .systemPage .proofArea ul li:not(:last-child){margin-bottom: 40px;}
+.systemPage .proofArea ul li mark[class*="point"]{margin-top: 20px;}
 .systemPage .proofArea small + p{margin-bottom: 40px; margin-top: 60px;}
 .systemPage .proofArea ol li{font-size: 15px; line-height: 20px;}
 .systemPage .proofArea ol li:not(:last-child){margin-bottom: 138px;}
@@ -97,7 +98,7 @@
 .technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{font-size: 18px; line-height: 21px;}
 .technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p small{font-size: 13px; line-height: 16px; margin-top: 10px;}
 .technologyPage .pointArea > b{font-size: 18px; line-height: 22px; margin-bottom: 12px;}
-.technologyPage .pointArea > p{font-size: 13px; line-height: 18px; margin-bottom: 40px;}
+.technologyPage .pointArea > b + p{font-size: 13px; line-height: 18px; margin-bottom: 40px;}
 .technologyPage .pointArea > ul:nth-of-type(2) li:not(:last-child){margin-bottom: 40px;}
 .technologyPage .pointArea > ul:nth-of-type(2) li::before{width: 80px; margin-bottom: 12px;}
 .technologyPage .pointArea > ul:nth-of-type(2) li strong{font-size: 16px; line-height: 20px; margin-bottom: 10px;}

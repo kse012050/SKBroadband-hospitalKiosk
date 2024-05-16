@@ -11,7 +11,7 @@
 .checkArea, .screenArea{text-align: center;}
 :is(.checkArea, .screenArea) > p{font-weight: 400;}
 :is(.checkArea, .screenArea) > p b{font-weight: 700;}
-:is(.checkArea, .screenArea) button{margin-top: 40px; font-weight: 500; border: 1px solid #DEDEDE; border-radius: 100px; box-sizing: border-box;}
+:is(.checkArea, .screenArea) a{margin-top: 40px; font-weight: 500; border: 1px solid #DEDEDE; border-radius: 100px; box-sizing: border-box;}
 .checkArea > strong{font-weight: 500; display: block;}
 .checkArea .imgArea{background-position: center; background-size: cover;}
 .screenArea{background-color: #F8F9FA;}
@@ -136,7 +136,7 @@
 .technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p{aspect-ratio: 340 / 430; padding: 30px 33px; background: url(../images/technology-point-img02.png) no-repeat center / cover; font-weight: 700;}
 .technologyPage .pointArea > ul:nth-of-type(1) > li:nth-child(2) p small{font-weight: 400;}
 .technologyPage .pointArea > b{display: block; font-weight: 500;}
-.technologyPage .pointArea > p{color: #666;}
+.technologyPage .pointArea > b + p{color: #666;}
 .technologyPage .pointArea > ul:nth-of-type(2) li::before{content: ''; display: block; margin-inline: auto; aspect-ratio: 1; background: url(../images/technology-point-icon.png) no-repeat left top calc((100% / (var(--idxTotal) - 1)) * var(--styleIdx)) / 100%;}
 .technologyPage .pointArea > ul:nth-of-type(2) li strong{display: block; font-weight: 600;}
 .technologyPage .pointArea > ul:nth-of-type(2) li p{color: #666;}

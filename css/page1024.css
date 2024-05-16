@@ -9,7 +9,7 @@
 .checkArea{margin-bottom: 100px;}
 :is(.checkArea, .screenArea) > p:nth-of-type(1){font-size: 32px; line-height: 38px; margin-bottom: 40px;}
 :is(.checkArea, .screenArea) > p:nth-of-type(2){font-size: 21px; line-height: 32px;}
-:is(.checkArea, .screenArea) button{height: 50px; padding-inline: 54px; font-size: 16px;}
+:is(.checkArea, .screenArea) a{line-height: 50px; padding-inline: 54px; font-size: 16px;}
 .checkArea > strong{font-size: 42px; line-height: 50px; margin-bottom: 60px;}
 .screenArea{padding-block: 100px;}
 .screenArea div ol::before{font-size: 16px; line-height: 44px; margin-bottom: 45px;}
@@ -37,6 +37,7 @@
 .systemPage .proofArea ul{gap: 60px;}
 .systemPage .proofArea ul li p{font-size: 21px; line-height: 32px;}
 .systemPage .proofArea ul li p::after{margin-top: 30px;}
+.systemPage .proofArea ul li mark[class*="point"]{margin-top: 25px;}
 .systemPage .proofArea > small + p{max-width: 600px; margin-bottom: 60px;}
 
 

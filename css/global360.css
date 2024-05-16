@@ -13,7 +13,7 @@ body{--spacing: 20px;}
 
 
 /* 포인트 */
-mark[class*="point"]{font-size: 15px; line-height: 18px; margin-top: 20px;}
+mark[class*="point"]{font-size: 15px; line-height: 18px;}
 
 
 /* 플로팅 메뉴 */
